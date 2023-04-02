@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Oswald:wght@200&family=Playfair+Display+SC:wght@700&family=Righteous&family=Tilt+Warp&display=swap');
+#portfolio{
+    scroll-margin-top: 100px;
+}
+#inicio{
+    scroll-margin-top: 100px;
+}
+#educacion{
+    scroll-padding-top: 100px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 0;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+  .btn-primary{
+    background-color: white;
+    color: #3586ff;
+    font-weight: bold;
+  }
+  .btn-primary:hover{
+    background-color: #3586ff;
+    color: white;
+  }
+  .contacto{
+    display: flex;
+    justify-content: center;
+  }
+  .lista_contacto{
+    margin-top: 20px;
+  }
+  .boton_volver{
+    border: none;
+    background-color: white;
+    color: #3586ff;
+    border-radius: 6px;
+    margin-left: 70%;
+  }
+  .titulo_contacto{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+  }
+  .main_fondo{
+    background-color: #3586ff;
+  }
+  .nav-link{
+    color: white;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+  }
+  .nav-link:hover{
+    color: white;
+  }
+  .underline-hover {
+    position: relative;
+  }
+  
+  .underline-hover::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -1px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .underline-hover:hover::before {
+    width: 70%;
+  }
+  .lista_contacto{
+    list-style-type: none;
+    color: white;
+
+  }
+@media (min-width: 1024px){
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: auto auto;
+        width: 100%;
+        gap: 10%;
+        height: 400px;
+        margin-bottom: 800px;
+      }
+      .celda{
+        margin-left: 5%;
+        margin-top: 10px;
+      }
+    .ul_experiencia{
+        list-style-type: none;
+        color: white;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .li_experiencia{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .contenido_experiencia{
+        width: 600px;
+        margin-left: 20px;
+    }
+    .educacion{
+        display: flex;
+    }
+    .titulo_experiencia{
+        text-align: center;
+        color: white;
+        font-family: 'Righteous', cursive;
+        margin-top: 300px;
+    }
+    .titulo_portfolio{
+        text-align: center;
+        color: white;
+        font-family: 'Righteous', cursive;
+        margin-top: 600px;
+    }
+    .titulo_educacion{
+        text-align: center;
+        color: white;
+        font-family: 'Righteous', cursive;
+        margin-top: 100px;
+    }
+    .ul_educacion{
+        display: inline-block;
+        list-style-type: none;
+        margin-top: 150px;
+        margin-left: 60px;
+        font-family: 'Righteous', cursive;
+        color: white;
+    }
+    .p_educacion{
+        width: 40%;
+        margin-left: 80px;
+        display: inline-flex;
+        margin-top: 100px;
+        font-family: 'Righteous', cursive;
+        color: white;
+    }
+    .img-fluid{
+        margin: 0 auto;
+        display: block;
+        height: 360px !important;
+        margin-top: 40px;
+    }
+    .col-lg-6{
+        display: block;
+        margin: 0 auto;
+    }
+    .bloque{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .lead{
+        text-align: center;
+    }
+    .bienvenidos{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .img-fluid{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        height: 300px;
+    }
+    .container{
+        align-items: center !important;
+    }
+    .col-lg-6{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .btn-outline.secondary{
+        margin-bottom: 60px !important;
+    }
+    .col-lg-6{
+        display: block;
+        margin: 0 auto;
+    }
+    .bloque{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .lead{
+        text-align: center;
+    }
+    .bienvenidos{
+        text-align: center;
+        margin-top: 20px;
+    }
+} 
+@media (max-width: 768px){
+    .img-fluid{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        height: 300px;
+    }
+    .container{
+        align-items: center !important;
+    }
+    .col-lg-6{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .btn-outline.secondary{
+        margin-bottom: 60px !important;
+    }
+}
